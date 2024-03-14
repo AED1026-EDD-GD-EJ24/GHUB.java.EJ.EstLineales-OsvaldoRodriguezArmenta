@@ -8,11 +8,12 @@ public class Principal {
         Scanner consola = new Scanner(System.in);
         int opc =0;
         do{
-            System.out.println("*************************");
-            System.out.println("  Estructuras Lineales   ");
-            System.out.println("*************************");
+            System.out.println("=================================");
+            System.out.println("      Estructuras Lineales       ");
+            System.out.println("=================================");
             System.out.println(" 1) Pila");
             System.out.println(" 2) Stack");
+            System.out.println(" 3) Delimitadores");
 
             System.out.println();
 
@@ -26,6 +27,9 @@ public class Principal {
                 case 2:
                    DemoStack.menu();
                    break;
+                case 3:
+                   DemoDelimitadores.menu();
+                   break;
                 case 0:
                     System.out.println("ADIOS!");
                     consola.close();
@@ -35,6 +39,7 @@ public class Principal {
             }
 
         } while (opc != 0);
+/*Entiendo */
 
     }
     
