@@ -7,13 +7,26 @@ public class DemoDelimitadores {
         System.out.println("************************");
         System.out.println();
         Delimitadores objDel = new Delimitadores();
-        String expr = "(a+b)/2";
-        if(objDel.evaluacion(expr)){
-            System.out.println("Expresion correcta");
-        }
-        else{
-            System.out.println("Expresion Inceorrecta");
-        }
+        //String expr = "(a+b)/2";
+         
+        String expr= "while (m<(n[8]+o)) { "+
+                     "int p=7; "+
+                     "/*comentarios*/"+
+                     "               } ";
+        if (objDel.evaluacion(expr))
+           System.out.println("Expresión correcta");
+        else
+           System.out.println("Expresión Incorrecta");
+        expr= "while (m<(n[8]+o)) { "+
+              "int p=7; "+
+              "/*comentarios*/";
+        if (objDel.evaluacion(expr))
+            System.out.println("Expresión correcta");
+        else
+            System.out.println("Expresión Incorrecta");
+            
+
+        
         
 
     }
