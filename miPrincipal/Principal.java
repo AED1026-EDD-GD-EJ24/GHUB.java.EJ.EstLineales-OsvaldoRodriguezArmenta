@@ -16,6 +16,8 @@ public class Principal {
             System.out.println(" 3) Delimitadores");
             System.out.println(" 4) Expresion infija-Prefija");
             System.out.println(" 5) Cola");
+            System.out.println(" 6) Queue");
+
 
             System.out.println("0) SALIR");
             System.out.print("Selecciona opción:");
@@ -33,8 +35,11 @@ public class Principal {
                 case 4:
                 //tarea
                 case 5:
-                   DemoCola.menu();;
-                   break;   
+                   DemoCola.menu();
+                   break;  
+                case 6:
+                   DemoQueue.menu();
+                   break;    
                 case 0:
                     System.out.println("ADIOS!");
                     consola.close();
