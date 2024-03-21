@@ -17,8 +17,7 @@ public class Principal {
             System.out.println(" 4) Expresion infija-Prefija");
             System.out.println(" 5) Cola");
             System.out.println(" 6) Queue");
-
-
+            System.out.println(" 7) Tabla de Dispersion");
             System.out.println("0) SALIR");
             System.out.print("Selecciona opción:");
             opc=consola.nextInt();
@@ -39,7 +38,10 @@ public class Principal {
                    break;  
                 case 6:
                    DemoQueue.menu();
-                   break;    
+                   break; 
+                case 7:
+                   DemoTablaDispersion.menu();
+                   break;      
                 case 0:
                     System.out.println("ADIOS!");
                     consola.close();
